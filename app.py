@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -61,7 +64,7 @@ def forgot_password():
 
         # For simplicity, you can redirect to a success page
         message = "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
-        
+
     return render_template('password_reset_request.html', message=message)
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -82,5 +85,4 @@ def signup():
     return render_template('signup.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    app.run(host='0.0.0.0', port=5000, debug=True)
