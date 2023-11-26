@@ -1,0 +1,131 @@
+/* Add or modify styles as needed */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+}
+
+#additional-buttons {
+    margin-top: 2em;
+}
+
+#additional-buttons a {
+    display: block;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    display: inline-block;
+    color: #28a745; /* Change this to your desired color */
+}
+.forgot-password {
+    margin-top: 1em;
+
+}
+.error {
+    color: red;
+}
+
+.error-border {
+    border: 1px solid red;}
+h1 {
+    color: white;
+    font-size: 2em; /* Adjust the font size */
+    margin-bottom: 60px; /* Add spacing at the bottom */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Set a bold font weight */
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007BFF; /* Default color */
+    transition: color 0.3s ease; /* Transition effect for color change */
+}
+
+.forgot-password a:hover {
+    color: #28a745; /* Green color on hover */
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1em;
+}
+form input,
+form button {
+    width: 78%; /* Adjusted width to accommodate padding and border */
+    padding: 0.5em;
+    margin-bottom: 1em;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    
+    padding: 2em;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 70px auto; /* Add top and bottom margin to separate from the navigation */
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.7em;
+    color: white;
+    text-align: left;
+    width: 80%;
+    padding-left: 9%;
+    
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+button {
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: #91cd05;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Login - Your Website</title>
+</head>
+<body>
+    <main>
+        <h1>Log in</h1>
+        
+        <form action="{{ url_for('login') }}" method="post">
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log in</button>
+            <div class="forgot-password">
+                <a href="{{ url_for('forgot_password') }}">Forgot your password?</a>
+            </div>
+        </form>
+        <div id="additional-buttons">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('login') }}">Log in</a>
+            <a href="{{ url_for('signup') }}">Sign up</a>
+            <a href="#">Resend confirmation email</a>
+        </div>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
