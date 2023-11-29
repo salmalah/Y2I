@@ -36,6 +36,6 @@ Y&I MVP is a Flask-based web application that allows users to create virtual roo
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/YandI-MVP.git
+   git clone https://github.com/salmalah/Y2I.git
    cd YandI-MVP
 
